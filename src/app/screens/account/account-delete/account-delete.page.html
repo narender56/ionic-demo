@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="white">
+    <ion-buttons slot="start">
+      <ion-back-button />
+    </ion-buttons>
+    <ion-title>Account Delete</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-item lines="none" class="border border-danger text-danger rounded-xl mt-4">
+    <LabelWithIcon [text]="'DeleteAccount' | i18n" icon="trash-outline" iconClasses="text-base" labelClasses="font-normal"></LabelWithIcon>
+  </ion-item>
+</ion-content>

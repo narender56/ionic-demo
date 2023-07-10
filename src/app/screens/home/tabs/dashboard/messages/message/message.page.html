@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="white">
+    <ion-buttons slot="start">
+      <ion-back-button color="primary" />
+    </ion-buttons>
+    <ion-title class="text-2xl ml-2">
+      {{ 'Message' | i18n }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label class="text-2xl font-bold">Message {{ title }} Title</ion-label>
+</ion-content>

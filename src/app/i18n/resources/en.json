@@ -1,0 +1,31 @@
+{
+  "translation": {
+    "Account": "Account",
+    "Continue": "Continue",
+    "ConsumptionDetails": "Consumption details",
+    "Damages": "Damages",
+    "DeleteAccount": "Account delete",
+    "Dashboad": "Dashboad",
+    "Email": "Email",
+    "FetchingDetails": "Fetching details...",
+    "GoBack": "Go back",
+    "LastBillingMonth": "Last billing month",
+    "LegalInfo": "Legal info",
+    "LoginTitle": "Sign in with your account",
+    "Logout": "Logout",
+    "Message": "Message",
+    "Messages": "Messages",
+    "MoreInformation": "More Information",
+    "MyConsumption": "My Consumption",
+    "News": "News",
+    "NoAccountYetText": "No account yet? Registration",
+    "OtherConcerns": "Other concerns",
+    "Overview": "Overview",
+    "Password": "Password",
+    "ReportADamage": "Report a Damage",
+    "Reports": "Reports",
+    "Settings": "Settings",
+    "SignIn": "Sign In",
+    "WelcomeToYourCustomerPortal": "Welcome to your customer portal"
+  }
+}

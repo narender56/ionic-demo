@@ -1,0 +1,9 @@
+<div class="flex items-center justify-between">
+  <LabelWithIcon
+    [text]="label"
+    [icon]="icon"
+    [labelClasses]="labelClasses"
+    [iconClasses]="iconClasses"
+   />
+   <ion-button class="h-10 uppercase" [class]="actionButtonClasses" fill="outline" (click)="handleActionClick()">{{ actionButtonText }}</ion-button>
+</div>

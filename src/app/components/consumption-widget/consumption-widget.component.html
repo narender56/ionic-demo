@@ -1,0 +1,23 @@
+<div class="p-4 bg-secondary-20">
+  <LabelWithIcon
+    [text]="'MyConsumption' | i18n"
+    icon="battery-half-outline"
+    iconClasses="text-xl text-dark"
+    labelClasses="font-bold text-dark"
+   />
+  <ion-card class="m-0 mt-8">
+    <ion-card-content class="flex items-center">
+      <ion-avatar class="bg-primary-10 flex items-center justify-center rounded-xl p-2">
+        <ion-icon class="text-4xl" name="battery-half-outline" />
+      </ion-avatar>
+      <div class="ml-4 flex flex-col">
+        <ion-label class="font-bold text-dark text-base mb-1">{{ 'ConsumptionDetails' | i18n }}</ion-label>
+        <LabelWithIcon
+          [text]="'LastBillingMonth' | i18n"
+          icon="calendar-outline"
+          iconClasses="text-xl text-dark"
+         />
+      </div>
+    </ion-card-content>
+  </ion-card>
+</div>

@@ -1,0 +1,31 @@
+{
+  "translation": {
+    "Account": "Account",
+    "Continue": "Weiter",
+    "ConsumptionDetails": "Verbrauchsdetails",
+    "Damage": "Schäden",
+    "Dashboad": "Dashboad",
+    "DeleteAccount": "Account löschen",
+    "Email": "Email",
+    "FetchingDetails": "Details abrufen...",
+    "GoBack": "Go back",
+    "LastBillingMonth": "Letzter Abrechnungsmonat",
+    "LegalInfo": "Rechtliches",
+    "LoginTitle": "Mit Ihrem Konto anmelden ",
+    "Logout": "Ausloggen",
+    "Message": "Mitteilung",
+    "Messages": "Mitteilungen",
+    "MoreInformation": "Mehr Information",
+    "MyConsumption": "Mein Verbrauch",
+    "News": "News",
+    "NoAccountYetText": "Noch keinen Account? Registrierung",
+    "OtherConcerns": "Andere Anliegen",
+    "Overview": "Übersicht",
+    "Password": "Password",
+    "ReportADamage": "Schaden melden",
+    "Reports": "Anliegen",
+    "Settings": "Einstellungen",
+    "SignIn": "Anmelden",
+    "WelcomeToYourCustomerPortal": "Willkommen in Ihrem Kundenportal"
+  }
+}

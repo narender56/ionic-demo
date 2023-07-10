@@ -1,0 +1,30 @@
+<AppHeader [title]="'Reports' | i18n"></AppHeader>
+<ion-content class="h-full" [fullscreen]="true" class="ion-padding h-full" (ionChange)="onSegmentChange($event)">
+  <ion-segment [value]="segment" color="primary">
+    <ion-segment-button value="Damages">
+      <ion-label>{{ 'Damages' | i18n }}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="OtherConcerns">
+      <ion-label>{{ 'OtherConcerns' | i18n }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="segment === 'Damages'">
+    <ion-fab-button color="danger">
+      <ion-icon name="add" />
+    </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-button fill="outline" color="secondary">{{ 'ReportADamage' | i18n }}</ion-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-refresher slot="fixed"  (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content />
+  </ion-refresher>
+  <swiper-container [grabCursor]="true" [keyboard]="true" #swiper>
+    <swiper-slide>
+      <DamageReportCard />
+    </swiper-slide>
+    <swiper-slide>
+      <DamageReportCard />
+    </swiper-slide>
+  </swiper-container>
+</ion-content>

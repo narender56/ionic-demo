@@ -1,0 +1,10 @@
+<ion-card class="w-40 h-40 card" (click)="handleAnnouncementClick()">
+  <ion-card-header>
+    <ion-card-title class="text-sm">Card Title</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>Card Content</ion-card-content>
+  <div class="bg-primary-10 p-2 fixed bottom-0 w-full">
+    <LabelWithIcon [text]="time | date: 'EEEEEE DD.MM.YYYY'" icon="time-outline" iconClasses="text-base" labelClasses="font-normal" />
+  </div>
+</ion-card>

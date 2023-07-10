@@ -1,0 +1,8 @@
+<AppHeader [title]="'Dashboad' | i18n"></AppHeader>
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content />
+  </ion-refresher>
+  <ConsumptionWidget />
+  <AnnouncementsWidget />
+</ion-content>

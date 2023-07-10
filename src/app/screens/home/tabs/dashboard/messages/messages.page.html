@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="white">
+    <ion-buttons slot="start">
+      <ion-back-button color="primary" />
+    </ion-buttons>
+    <ion-title class="text-2xl ml-2">
+      {{ 'Messages' | i18n }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content />
+  </ion-refresher>
+  <div class="flex flex-wrap">
+    <AnnouncementWidget *ngFor="let i of messages; let index = index" (onClick)="onAnnouncementClick(index + 1)" />
+  </div>
+</ion-content>

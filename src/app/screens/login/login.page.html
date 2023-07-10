@@ -1,0 +1,51 @@
+<ion-content scroll-y="false">
+  <div class="mt-48 px-4">
+    <ion-label class="text-secondary text-sm uppercase py-2 block">{{ 'WelcomeToYourCustomerPortal' | i18n }}</ion-label>
+    <ion-label class="text-xl py-4 font-bold capitalize">{{ 'LoginTitle' | i18n }}</ion-label>
+    <swiper-container
+      class="mySwiper"
+      [grabCursor]="true"
+      [allowTouchMove]="allowTouchMove"
+      [creativeEffect]="creativeEffect"
+      effect="creative"
+      [modules]="modules"
+      #swiper
+    >
+      <swiper-slide>
+        <ion-item lines="none" class="border rounded-xl shadow-lg my-6">
+          <ion-icon class="text-sm mr-2" name="mail-outline" slot="start"></ion-icon>
+          <ion-input type="email" [placeholder]="'Email' | i18n" [clearInput]="true" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-button expand="block" class="h-10" (click)="onNext()" [disabled]="loading || !email">
+          {{ 'Continue' | i18n }}
+          <ion-spinner class="h-4" *ngIf="loading" slot="end"></ion-spinner>
+        </ion-button>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none" class="border rounded-xl my-6">
+          <ion-icon class="text-sm mr-2" name="mail-outline" slot="start"></ion-icon>
+          <ion-input [label]="email" [disabled]="true"></ion-input>
+        </ion-item>
+        <ion-item lines="none" class="border rounded-xl shadow-lg my-6">
+          <ion-icon class="text-sm mr-2" name="eye-outline" slot="start"></ion-icon>
+          <ion-input type="password" [placeholder]="'Password' | i18n" [clearInput]="true"></ion-input>
+        </ion-item>
+        <div class="flex justify-between gap-10">
+          <ion-button expand="block" class="h-10 w-full" (click)="onPrevious()" fill="outline">
+            {{ 'GoBack' | i18n }}
+          </ion-button>
+          <ion-button expand="block" class="h-10 w-full" (click)="onLogin()">
+            {{ 'SignIn' | i18n }}
+          </ion-button>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</ion-content>
+<ion-footer collapse="fade">
+  <ion-toolbar class="px-4">
+    <ion-button expand="block" class="h-10" fill="outline" color="secondary" (click)="changeLangauge()">
+      {{ 'NoAccountYetText' | i18n }}
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

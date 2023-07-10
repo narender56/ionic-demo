@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="white">
+    <ion-buttons slot="start">
+      <ion-back-button color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="text-2xl ml-2">
+      {{ 'Account' | i18n }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="mt-2">
+    <LabelWithIcon [text]="'Settings' | i18n" icon="settings-outline" labelClasses="font-semibold"></LabelWithIcon>
+    <ion-item lines="none" class="border border-danger text-danger rounded-xl mt-4" button (click)="onAccountDelete()">
+      <LabelWithIcon [text]="'DeleteAccount' | i18n" icon="trash-outline" iconClasses="text-base" labelClasses="font-normal"></LabelWithIcon>
+    </ion-item>
+  </div>
+
+  <div class="mt-16">
+    <LabelWithIcon [text]="'MoreInformation' | i18n" icon="information-circle-outline" labelClasses="font-semibold"></LabelWithIcon>
+    <ion-item lines="none" class="border border-secondary rounded-xl mt-4" button>
+      <LabelWithIcon [text]="'LegalInfo' | i18n" icon="document-text-outline" iconClasses="text-base" labelClasses="font-normal"></LabelWithIcon>
+    </ion-item>
+  </div>
+  <ion-datetime></ion-datetime>
+</ion-content>
+
+<ion-footer collapse="fade">
+  <ion-toolbar class="px-4">
+    <ion-button expand="block" class="h-10" fill="outline" color="dark">
+      {{ 'Logout' | i18n }}
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

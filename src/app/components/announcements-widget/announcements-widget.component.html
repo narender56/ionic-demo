@@ -1,0 +1,15 @@
+<div class="ion-padding">
+  <ActionLabel
+    [label]="'Messages' | i18n"
+    labelClasses="font-semibold"
+    icon="reader-outline"
+    [actionButtonText]="'Overview' | i18n"
+    (onClick)="handleMessageOverviewClick()"
+  />
+  <swiper-container [slidesPerView]="2" [grabCursor]="true" [keyboard]="true">
+    <swiper-slide *ngFor="let i of list; let index = index">
+      <AnnouncementWidget (onClick)="onAnnouncementClick(index + 1)"/>
+    </swiper-slide>
+  </swiper-container>
+</div>
+
